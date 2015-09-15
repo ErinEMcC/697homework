@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>Bottles of Beer on the Wall</h1>
+<?php
+/*Write a PHP program that prints the full lyrics of the song "99 Bottles of Beer" on the page. 
+Modify your code, such that you can print out the song for any number of starting beers.*/
+
+for ($bottles = 99; --$bottles;)
+
+ while ($bottles > 0) {
+    {
+	echo "$bottles bottles of beer on the wall, $bottles bottles of beer.";
+	echo "take one down and pass it around," . --$bottles . "bottles of beer on the wall";
+	echo "</br>";
+	}
+  
+if ($bottles < 1)
+	echo "$bottles bottles of beer on the wall, $bottles bottles of beer,";
+	echo "Go to the store and buy some more, 99 bottles of beer on the wall.";
+?>
+</body>
+</html>
