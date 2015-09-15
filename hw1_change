@@ -1,0 +1,23 @@
+<html>
+<body>
+<h1>Challenge: Correct Change</h1>
+<?php
+/*
+Write a program that takes a number representing the change due to a user (in cents) 
+and writes out how many dollars, quarters, dimes, nickels, and pennies is due in change.
+*/
+
+$change = 557;
+echo "You are due $change cents in change.<br>";
+
+$do = ($change/100); $change%=100;
+$qu = ($change/25); $change%=25;
+$di = ($change/10); $change%=10;
+$ni = ($change/5); $change%=5;
+$pe = ($change/1); $change%=1;
+	
+echo "<p>You are due $do dollars, $qu quarters, $di dimes, $ni nickels, and $pe pennies.";
+
+?>
+</body>
+</html>
