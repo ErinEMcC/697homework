@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>Code HW3</h1>
+
+<style>
+	table {font-family: serif; 
+		border: 2px solid black;
+	}
+</style>
+</head>
+
+<body>
+<?php
+
+#Put book data into a multi-dimensional array
+$books = array(
+	array ('Title', 'Author', 'Page Count', 'Cover', 'Price'),  
+	array('PHP and MySQL Web Development', 'Luke Welling', '144', 'Paperback','31.63'), 
+	array ('Web Design with HTML, CSS, JavaScript and jQuery', 'Jon Duckett', '135','Paperback', '41.23'),
+	array ('PHP Cookbook: Solutions & Examples for PHP Programmers', 'David Sklar', '14', 'Paperback', '40.88'),
+	array ('JavaScript and JQuery: Interactive Front-End Web Development', 'Jon Duckett', '251', 'Paperback', '22.09'),
+	array('Modern PHP: New Features and Good Practices', 'Josh Lockhart', '7', 'Paperback', '28.49'),
+	array ('Programming PHP', 'Kevin Tatroe', '26', 'Paperback', '28.96')
+);
+
+#echo "<pre>";
+
+foreach($books as $row)
+{
+	foreach($row as $piece)
+		echo "$piece";
+		echo "<br>";
+}
+
+echo "</pre>";
+
+?>
+
+</body>
+</html>
